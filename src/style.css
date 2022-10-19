@@ -56,3 +56,23 @@ body {
     background-color: var(--primary);
     overflow-y: scroll;
 }
+
+.notes .tools{
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.notes .tools button {
+    padding: 10px;
+    font-size: 1.7rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.notes .tools button:hover {
+    color: var(--bg);
+    transition: ease-in-out;
+}
