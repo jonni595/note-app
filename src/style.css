@@ -1,78 +1,95 @@
 :root {
-    --bg: #202124;
-    --primary: #DCD7C9;
-    --secondary: #A69A75;
-    --font: font-family: 'Oswald', sans-serif;
-    font-size: 62.5%;
+  --bg: #202124;
+  --primary: #dcd7c9;
+  --secondary: #a69a75;
+  --font: "Oswald", sans-serif;
+  font-size: 62.5%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bg);
-    height: 100vh;
+  background-color: var(--bg);
+  height: 100vh;
 }
 
 .button-plus {
-    width: 70px;
-    height: 70px;
-    background-color: var(--primary);
-    color: var(--secondary);
-    border-radius: 50%;
-    border: none;
-    font-size: 3rem;
-    position: relative;
-    top: 5rem;
-    left: 5rem;
-    cursor: pointer;
-    transition: ease-in-out .5s;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 50%;
+  border: none;
+  font-size: 3rem;
+  position: relative;
+  top: 5rem;
+  left: 5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
 }
 
-.button-plus:hover{
-    filter: drop-shadow(0px 4px 7px rgba(220,215,201, .5));
-    transition: ease-in .2s;
-    transform: scale(1.1) rotate(90deg);
-    color: var(--bg);
+.button-plus:hover {
+  filter: drop-shadow(0px 4px 7px rgba(220, 215, 201, 0.5));
+  transition: ease-in 0.2s;
+  transform: scale(1.1) rotate(90deg);
+  color: var(--bg);
 }
 
-.container-notes{
-    width: 90%;
-    height: 700px;
-    max-width: 1500px;
-    /* border: 1px solid #000; */
-    margin: 100px auto 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 290px);
-    justify-content: center;
-    gap: 20px;
+.container-notes {
+  width: 90%;
+  height: 700px;
+  max-width: 1500px;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 290px);
+  justify-content: center;
+  gap: 20px;
 }
 
-.notes{
-    background-color: var(--primary);
-    overflow-y: scroll;
+.notes {
+  background-color: var(--primary);
+  overflow-y: scroll;
 }
 
-.notes .tools{
-    width: 100%;
-    border-bottom: 1px solid var(--secondary);
+.notes .tools {
+  width: 100%;
+  border-bottom: 1px solid var(--secondary);
 }
 
 .notes .tools button {
-    padding: 10px;
-    font-size: 1.7rem;
-    background-color: var(--primary);
-    color: var(--secondary);
-    border: none;
-    cursor: pointer;
-    transition: ease-in .2s;
+  padding: 10px;
+  font-size: 1.7rem;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  cursor: pointer;
+  transition: ease-in 0.2s;
 }
 
 .notes .tools button:hover {
-    color: var(--bg);
-    transition: ease-in-out;
+  color: var(--bg);
+  transition: ease-in-out;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
 }
