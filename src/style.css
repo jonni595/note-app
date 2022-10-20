@@ -76,18 +76,17 @@ body {
   transition: ease-in-out;
 }
 
-/* .notes textarea {
+.notes textarea {
+  border: none;
   outline: none;
   font-family: inherit;
+  font-size: 1.7rem;
   letter-spacing: .2rem;
-  font-size: 1.9rem;
-  border: none;
-  height: 400px;
-  width: 100%;
-  padding: 10px;
+  padding-left: 10px;
+  background-color: var(--primary);
 }
 
-.main {
+/* .main {
   padding: 20px;
 }
 
