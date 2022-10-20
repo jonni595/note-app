@@ -1,4 +1,4 @@
-const addBtn = document.getElementById('add')
+/* const addBtn = document.getElementById('add')
 
 const notes = JSON.parse(localStorage.getItem('notes'))
 
@@ -55,8 +55,8 @@ function addNewNote(text = '') {
 function updateLS() {
     const notesText = document.querySelectorAll('textarea')
 
-    const note = []
-    notesText.forEach(note => note.pus(note.value))
+    const notes = []
+    notesText.forEach(note => notes.push(note.value))
 
     localStorage.setItem('notes', JSON.stringify(notes))
-}
+} */

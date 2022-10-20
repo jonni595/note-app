@@ -2,7 +2,7 @@
   --bg: #202124;
   --primary: #dcd7c9;
   --secondary: #a69a75;
-  --font: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 62.5%;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .notes {
   background-color: var(--primary);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .notes .tools {
@@ -76,14 +76,15 @@ body {
   transition: ease-in-out;
 }
 
-.note textarea {
+/* .notes textarea {
   outline: none;
   font-family: inherit;
-  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  font-size: 1.9rem;
   border: none;
   height: 400px;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .main {
@@ -92,4 +93,4 @@ body {
 
 .hidden {
   display: none;
-}
+} */
